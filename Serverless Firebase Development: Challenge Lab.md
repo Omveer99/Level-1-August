@@ -14,7 +14,7 @@ export Frontend_Staging_Service_Name=
 export Frontend_Production_Service_Name=
 ```
 
-##Press y when asked and ignore the errors
+## Press y when asked and ignore the errors
 
 
 ```bash
