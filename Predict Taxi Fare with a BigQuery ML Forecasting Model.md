@@ -1,5 +1,6 @@
 # Run code in Cloud Shell
 
+```bash
 bq query --nouse_legacy_sql '
 #standardSQL
 SELECT
@@ -155,3 +156,5 @@ FROM
   SELECT *
   FROM taxitrips
 ));'
+
+```
