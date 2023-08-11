@@ -2,6 +2,7 @@
  # Run The Code In Cloud Shell
 
 <pre>
+ <span>
 bq mk ecommerce
 bq query --nouse_legacy_sql '
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
@@ -225,6 +226,7 @@ SELECT
 )
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
+  </span>
  </pre>
 
  # Run in BigQuery
