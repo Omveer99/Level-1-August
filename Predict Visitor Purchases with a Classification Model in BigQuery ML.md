@@ -2,10 +2,6 @@
  # Run The Code In Cloud Shell
 
 ```bash
-#!/bin/bash
-
-echo "Hello, World!"
-```
  <pre>
 ```bash
 bq mk ecommerce
@@ -232,6 +228,7 @@ SELECT
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
   </pre>
+```
 
  # Run in BigQuery
 
