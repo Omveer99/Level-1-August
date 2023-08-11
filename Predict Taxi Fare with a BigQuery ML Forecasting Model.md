@@ -1,3 +1,5 @@
+# Run code in Cloud Shell
+
 bq query --nouse_legacy_sql '
 #standardSQL
 SELECT
