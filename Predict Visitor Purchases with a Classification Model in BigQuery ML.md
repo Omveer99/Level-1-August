@@ -235,4 +235,6 @@ Open the terminal and execute the following commands:
 git clone https://github.com/rosera/pet-theory.git
 cd ~/pet-theory/lab02
 
+\```
 
+# hello 
