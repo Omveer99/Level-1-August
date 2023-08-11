@@ -115,7 +115,6 @@ if (process.argv.length != 3 || recordCount < 1 || isNaN(recordCount)) {
 createTestData(recordCount);
 EOF
 )
-```
 echo "$updated_contents" > createTestData.js
 gcloud firestore databases create --location=us-east1
 node createTestData 1000
