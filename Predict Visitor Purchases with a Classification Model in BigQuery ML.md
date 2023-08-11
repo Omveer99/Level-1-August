@@ -1,13 +1,8 @@
 
  # Run The Code In Cloud Shell
 
-<pre>
- #standardSQL
-SELECT
-  roc_auc,
-  CASE
-    WHEN roc_auc 
  <span>
+  ```bash
 bq mk ecommerce
 bq query --nouse_legacy_sql '
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
