@@ -226,5 +226,13 @@ SELECT
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
 
- ## Run The Code In Cloud Shell
- ### Run in BigQuery
+
+### Clone the Repository and Navigate to the Directory
+
+Open the terminal and execute the following commands:
+
+```bash
+git clone https://github.com/rosera/pet-theory.git
+cd ~/pet-theory/lab02
+
+
