@@ -2,6 +2,11 @@
  # Run The Code In Cloud Shell
 
 <pre>
+ #standardSQL
+SELECT
+  roc_auc,
+  CASE
+    WHEN roc_auc 
  <span>
 bq mk ecommerce
 bq query --nouse_legacy_sql '
