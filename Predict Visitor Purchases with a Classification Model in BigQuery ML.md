@@ -226,7 +226,8 @@ SELECT
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
 
- ```sql
--- Your first SQL query here
+exit
+
+# hii
 
 
