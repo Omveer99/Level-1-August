@@ -1,7 +1,7 @@
 
  # Run The Code In Cloud Shell
 
-
+<pre>
 ```bash
 bq mk ecommerce
 bq query --nouse_legacy_sql '
@@ -226,7 +226,7 @@ SELECT
 )
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
- 
+ </pre>
 
  # Run in BigQuery
 
