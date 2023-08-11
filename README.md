@@ -1,0 +1,19 @@
+
+# Setting Up Project GSP643
+
+## Copy the IDE and Open in Incognito
+
+## Clone the Repository and Navigate to the Directory
+
+## Install Dependencies and Configure Google Cloud
+
+## Manually Complete the Remaining Tasks
+
+### Clone the Repository and Navigate to the Directory
+
+Open the terminal and execute the following commands:
+
+```bash
+git clone https://github.com/rosera/pet-theory.git
+cd ~/pet-theory/lab02
+
