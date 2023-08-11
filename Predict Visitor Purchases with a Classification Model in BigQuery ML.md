@@ -2,8 +2,6 @@
  # Run The Code In Cloud Shell
 
 ```bash
- <pre>
-```bash
 bq mk ecommerce
 bq query --nouse_legacy_sql '
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
@@ -232,7 +230,7 @@ ORDER BY
 
  # Run in BigQuery
 
- <pre>
+
 ```bash
  #standardSQL
 SELECT
@@ -291,6 +289,6 @@ SELECT * EXCEPT(unique_session_id) FROM (
   country
 )
 ));
- </pre>
+```
 
 
