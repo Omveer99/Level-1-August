@@ -226,5 +226,5 @@ SELECT
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
 
- # Run The Code In Cloud Shell
- # Run in BigQuery
+ ## Run The Code In Cloud Shell
+ ### Run in BigQuery
