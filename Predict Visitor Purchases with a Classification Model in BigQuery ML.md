@@ -1,12 +1,12 @@
 
  # Run The Code In Cloud Shell
-<pre>
+
 ```bash
 #!/bin/bash
 
 echo "Hello, World!"
 ```
-</pre>
+
  <pre>
 ```bash
 bq mk ecommerce
