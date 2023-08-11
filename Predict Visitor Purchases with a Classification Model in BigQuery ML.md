@@ -3,7 +3,7 @@
  <pre>
 ```sql
 
-bq mk ecommerce
+-- bq mk ecommerce
 bq query --nouse_legacy_sql '
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
 OPTIONS
