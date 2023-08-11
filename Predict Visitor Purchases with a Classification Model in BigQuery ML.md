@@ -6,7 +6,6 @@
 
 echo "Hello, World!"
 ```
-
  <pre>
 ```bash
 bq mk ecommerce
