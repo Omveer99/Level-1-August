@@ -1,7 +1,7 @@
 
  # Run The Code In Cloud Shell
 
- <span>
+ <pre>
   ```bash
 bq mk ecommerce
 bq query --nouse_legacy_sql '
