@@ -226,7 +226,7 @@ SELECT
 )
 ORDER BY
   predicted_will_buy_on_return_visit DESC;'
-  </span>
+  </pre>
 
  # Run in BigQuery
 
