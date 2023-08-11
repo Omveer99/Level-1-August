@@ -1,4 +1,4 @@
- # Run the Code in Cloud Shell
+ ## Run The Code In Cloud Shell
 
 ```bash
 bq mk ecommerce
