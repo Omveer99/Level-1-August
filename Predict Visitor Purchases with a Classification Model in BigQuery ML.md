@@ -1,8 +1,8 @@
 
  # Run The Code In Cloud Shell
- #!/bin/bash
- <pre>
 
+ <pre>
+ #!/bin/bash
 bq mk ecommerce
 bq query --nouse_legacy_sql '
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
