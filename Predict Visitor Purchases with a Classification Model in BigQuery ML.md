@@ -1,5 +1,6 @@
 
  # Run The Code In Cloud Shell
+ #!/bin/bash
  <pre>
 
 bq mk ecommerce
