@@ -13,3 +13,36 @@ export Zone=
 ```bash
 gcloud compute networks create securenetwork --subnet-mode custom
 ```
+
+# Task 2: The new VPC contains a new non-default subnet within it
+```bash
+gcloud compute networks subnets create securenetwork-subnet --network=securenetwork --region $Region --range=192.168.16.0/20
+```
+# Task 3: A firewall rule exists that allows TCP port 3389 traffic ( for RDP )
+
+```bash
+gcloud compute firewall-rules create rdp-ingress-fw-rule --allow=tcp:3389 --source-ranges 0.0.0.0/0 --target-tags allow-rdp-traffic --network securenetwork
+```
+
+# Task 4: A Windows compute instance called vm-bastionhost exists that has a public ip-address to which the TCP port 3389 firewall rule applies.
+
+```bash
+gcloud compute instances create vm-bastionhost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
+```
+
+# Task 5: A Windows compute instance called vm-securehost exists that does not have a public ip-address
+
+```bash
+gcloud compute instances create vm-securehost --zone=$Zone --machine-type=e2-medium --network-interface=subnet=securenetwork-subnet,no-address --network-interface=subnet=default,no-address --tags=allow-rdp-traffic --image=projects/windows-cloud/global/images/windows-server-2016-dc-v20220513
+```
+
+# Task 6: The vm-securehost is running Microsoft IIS web server software.
+
+```bash
+gcloud compute reset-windows-password vm-securehost --user app_admin --zone $Zone
+```
+
+### If asking choose y/n then press "y", and then hit Enter.
+
+## Follow the Video for next Step
+
